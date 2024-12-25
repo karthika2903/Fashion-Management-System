@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1> DRESSES DATABASE</h1>
+    <a href="/add">Add New Dress</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Complimentary</th>
+                <th>PickCount</th>
+                <th>CRUD OPERATIONS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% allDresses.forEach(dress=>{%>
+                <tr>
+                    <td>
+                        <%=dress.name%>
+                    </td>
+                    <td>
+                        <%=dress.type%>
+                    </td>
+                    <td>
+                        <%=dress.complimentary%>
+                    </td>
+                    <td>
+                        <%=dress.pickCount%>
+                    </td>
+                    <td class="form">
+                        <!-- update dress -->
+                        <form action="/update" method="post" style="display: inline;">
+                            <input type="hidden" name="id" value="<%= dress._id%>">
+                            <input type="text" name="name" value="<%= dress.name%>">
+                            <input type="text" name="type" value="<%= dress.type%>">
+                            <input type="text" name="complimentary" value="<%= dress.complimentary%>">
+                            <button type="submit" class="green">Update</button>
+                        </form>
+                        <form action="/delete" method="post" style="display:inline ;">
+                            <input type="hidden" name="id" value="<%= dress._id %>">
+                            <button type="submit" class="red">delete</button>
+
+                        </form>
+                        <!-- pick a dress             -->
+                        <form action="/pick" method="post" style="display:inline ;">
+                            <input type="hidden" name="id" value="<%= dress._id %>">
+                            <button type="submit" class="pink">Pick Dress</button>
+                        </form>
+                    </td>
+                </tr>
+                <% });%>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./WhatsApp\ Image\ 2024-11-24\ at\ 9.25.46\ PM.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+
+  h1 {
+    text-align: center;
+    color:white;
+    margin: 20px 0;
+  }
+  
+
+  a {
+    display: inline-block;
+    float: right;
+    display: flex;
+    /* justify-content: flex-end; */
+    margin: 5px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #008080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #005F5F; 
+  }
+  
+
+  table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 50px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+ 
+  thead {
+    background-color: #E6F7FF; 
+    color: black;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  
+  tr:hover {
+    background-color: #E6F7FF; 
+    color: black;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 120px;
+  }
+  
+  button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+;
+  }
+  
+  button.green {
+    background-color: #008080;
+  }
+  
+  button.green:hover {
+    background-color: #005F5F;
+  }
+  
+  button.red {
+    background-color: #CC0000;
+  }
+  
+  button.red:hover {
+    background-color: #990000;
+  }
+  
+  button.pink {
+    background-color: #FF69B4; 
+  }
+  
+  button.pink:hover {
+    background-color: #FF1493; 
+  }
+
+  @media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    a {
+        padding: 8px 10px;
+        font-size: 12px;
+        margin: 8px auto;
+        width: 90%; /* Full width with slight margin */
+        justify-content: center;
+        float: none;
+    }
+
+    table {
+        font-size: 11px;
+        width: 100%;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 11px;
+        text-align: left;
+    }
+
+    tr:hover {
+        background-color: transparent;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

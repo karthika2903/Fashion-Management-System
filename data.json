@@ -1,0 +1,15 @@
+[
+    {  
+        "name":"Anarkali",
+        "type":"traditional",
+        "complimentary":"Classic",
+        "pickCount":0
+    },
+    
+    {
+        "name":"jean Top",
+        "type":"modern",
+        "complimentary":"Fashionable",
+        "pickCount":0
+    }
+]

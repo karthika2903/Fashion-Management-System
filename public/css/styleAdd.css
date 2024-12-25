@@ -1,0 +1,273 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);
+    overflow: hidden;
+    background-image: url(../css/WhatsApp\ Image\ 2024-11-23\ at\ 10.16.08\ PM.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .screen {
+    /* background: linear-gradient(90deg, #2b16ca, #4740a3); */
+    /* background: #7E7BB9; */
+    position: relative;
+    height: 600px;
+    width: 360px;
+    box-shadow: 0px 0px 24px #242044;
+  }
+
+  .screen__content {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+  }
+
+  .screen__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+  }
+
+  .screen_background_shape {
+    transform: rotate(45deg);
+    position: absolute;
+  }
+
+  .screen_background_shape1 {
+    height: 520px;
+    width: 520px;
+    background: #FFF;
+    top: -50px;
+    right: 120px;
+    border-radius: 0 72px 0 0;
+  }
+
+  .screen_background_shape2 {
+    height: 220px;
+    width: 220px;
+    /* background: #6C63AC; */
+    top: -172px;
+    right: 0;
+    border-radius: 32px;
+    background-color: #B4A0D8;
+
+  }
+
+  .screen_background_shape3 {
+    height: 540px;
+    width: 190px;
+    /* background:#6C63AC; */
+    background-color: #B4A0D8;
+
+    top: -24px;
+    right: 0;
+    border-radius: 32px;
+  }
+
+  .screen_background_shape4 {
+    height: 400px;
+    width: 200px;
+    /* background: #7E7BB9;*/
+    background-color: #B4A0D8;
+    top: 420px;
+    right: 50px;
+    border-radius: 60px;
+  }
+
+  .login {
+    width: 320px;
+    padding: 30px;
+    padding-top: 156px;
+  }
+  input{
+    font-size: medium;
+  }
+
+  .login__field {
+    padding: 20px 0px;
+    position: relative;
+    color: #2b16ca;
+  }
+
+  .login__icon {
+    position: absolute;
+    top: 30px;
+    color: #7875B5;
+  }
+
+  .login__input {
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 75%;
+    transition: 0.2s;
+  }
+  ::placeholder{
+    color: purple;
+  }
+ 
+  .login__input:hover {
+    outline: none;
+    border-bottom-color: #6A679E;
+  }
+
+  .login__submit {
+    background: #fff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color:white;
+    box-shadow: 0px 2px 2px #5C5696;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #B4A0D8;
+  }
+
+  .login__submit:hover {
+    border-color: #6A679E;
+    outline: none;
+
+  }
+  .button__icon {
+    font-size: 24px;
+    margin-left: auto;
+    color:white;
+  }
+  /* Mobile View Adjustments */
+@media only screen and (max-width: 480px) {
+  body {
+      background: linear-gradient(90deg, #C7C5F4, #776BCC);
+      /* background-image: url(../css/WhatsApp\ Image\ 2024-11-23\ at\ 10.16.08\ PM.jpeg); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      overflow-x: hidden; 
+  }
+
+  .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 10px;
+  }
+
+  .screen {
+      position: relative;
+      height: auto;
+      width: 100%;
+      box-shadow: none;
+  }
+
+  .screen__content {
+      z-index: 1;
+      position: relative;
+      height: 100%;
+  }
+
+  .screen__background {
+      display: none; 
+  }
+
+  .login {
+      width: 100%;
+      padding: 15px;
+      padding-top: 80px;
+  }
+
+  input {
+      font-size: 14px;
+      color: white;
+  }
+
+  .login__field {
+      padding: 15px 0px;
+      position: relative;
+      color: purple;
+  }
+
+  .login__input {
+      border: none;
+      border-bottom: 2px solid #D1D1D4;
+      background: none;
+      padding: 10px;
+      padding-left: 24px;
+      font-weight: 700;
+      width: 100%; 
+      transition: 0.2s;
+  }
+
+  .login__input:hover {
+      outline: none;
+      border-bottom-color: #6A679E;
+  }
+
+  .login__submit {
+      background: #fff;
+      font-size: 16px;
+      margin-top: 30px;
+      padding: 16px 20px;
+      border-radius: 26px;
+      border: 1px solid #D4D3E8;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      color: white;
+      box-shadow: 0px 2px 2px #5C5696;
+      cursor: pointer;
+      transition: 0.2s;
+      background-color: #B4A0D8;
+  }
+
+  .login__submit:hover {
+      border-color: #6A679E;
+      outline: none;
+  }
+
+  h1 {
+      font-size: 22px;
+      text-align: center;
+      color: white;
+  }
+
+  .button__icon {
+      font-size: 24px;
+      margin-left: auto;
+      color: white;
+  }
+  ::placeholder{
+    color: white;
+  }
+}
